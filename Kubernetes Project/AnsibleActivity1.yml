@@ -1,0 +1,7 @@
+- hosts: app
+  become: yes
+  tasks:
+    - name: Create a new User
+      user:
+        name: neelima
+        group: wheel
